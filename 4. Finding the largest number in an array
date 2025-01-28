@@ -29,3 +29,18 @@ END FOR
 
 PRINT "The largest number is:", largest
 STOP
+
+Flow Chart:
+A[Start] --> B[Input n: Get the size of the array]
+    B --> C[Input array elements: Populate the array with n elements]
+    C --> D[Initialize largest = arr[0]]
+    D --> E[Set i = 1]
+    E --> F{Is i < n?}
+    F --> G{Is arr[i] > largest?}
+    G --> H[Update largest = arr[i]]:::yes
+    G --> I[No action]:::no
+    H --> J[Increment i by 1]
+    I --> J
+    J --> F
+    F --> K[Output largest: Print the largest number]
+    K --> L[End]
