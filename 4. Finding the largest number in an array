@@ -1,0 +1,31 @@
+Algorithm:
+1. Start.
+2. Input the size of the array n.
+3. Declare an array arr of size n.
+4. Input the elements of the array.
+5. Initialize a variable largest with the first element of the array (arr[0]).
+6. For each element arr[i] from index 1 to n-1:
+If arr[i] > largest, update largest = arr[i].
+7. After the loop, largest contains the largest number in the array.
+8. Print the value of largest.
+9. Stop.
+
+Pseudocode:
+START
+PRINT "Enter the size of the array:"
+INPUT n
+DECLARE array arr[n]
+PRINT "Enter the elements of the array:"
+FOR i = 0 TO n-1 DO
+    INPUT arr[i]
+END FOR
+
+SET largest = arr[0]
+FOR i = 1 TO n-1 DO
+    IF arr[i] > largest THEN
+        largest = arr[i]
+    ENDIF
+END FOR
+
+PRINT "The largest number is:", largest
+STOP
