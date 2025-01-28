@@ -1,0 +1,43 @@
+Algorithm:
+1. Start.
+2. Generate a random number between 1 and 100 and store it in randomNumber.
+3. Initialize guess to 0.
+4. While guess is not equal to randomNumber:
+Input the user's guess.
+If guess is less than randomNumber, print "Higher."
+If guess is greater than randomNumber, print "Lower."
+If guess is equal to randomNumber, print "Correct! You guessed the number."
+5. End.
+
+Pseudocode :
+START
+SET randomNumber = GenerateRandomNumber(1, 100)
+SET guess = 0
+
+WHILE guess != randomNumber DO
+    PRINT "Enter your guess:"
+    INPUT guess
+    
+    IF guess < randomNumber THEN
+        PRINT "Higher"
+    ELSE IF guess > randomNumber THEN
+        PRINT "Lower"
+    ELSE
+        PRINT "Correct! You guessed the number."
+    END IF
+END WHILE
+
+STOP
+
+Flowchart :
+    A[Start] --> B[Generate random number between 1 and 100]
+    B --> C[Initialize guess = 0]
+    C --> D[Input guess]
+    D --> E{Is guess == randomNumber?}
+    E --> F[Print "Correct! You guessed the number."]:::yes
+    F --> G[End]
+    E --> H{Is guess < randomNumber?}
+    H --> I[Print "Higher"]:::hint
+    I --> D
+    H --> J[Print "Lower"]:::hint
+    J --> D
