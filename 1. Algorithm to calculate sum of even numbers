@@ -21,3 +21,12 @@ PRINT "The sum of even numbers is:", sum
 STOP
 
 Flowchart:
+1. Start → Begin the process.
+2. Input n → Ask the user for the range limit.
+3. Initialize sum = 0.
+4. Loop i from 1 to n:
+Check Is i even?:
+If Yes, add i to sum.
+If No, skip.
+5. Print sum.
+6. End
