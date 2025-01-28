@@ -1,0 +1,20 @@
+Algorithm:
+1. Start
+2. Input the temperature in Celsius (C).
+3. Calculate Fahrenheit using the formula:
+F = (C \times 9/5) + 32
+5. End
+
+Pseudocode:
+START
+PRINT "Enter temperature in Celsius:"
+INPUT C
+SET F = (C * 9/5) + 32
+PRINT "Temperature in Fahrenheit is:", F
+STOP
+
+Flowchart:
+    A[Start] --> B[Input temperature in Celsius (C)]
+    B --> C[Calculate F = (C × 9/5) + 32]
+    C --> D[Output temperature in Fahrenheit (F)]
+    D --> E[End]
