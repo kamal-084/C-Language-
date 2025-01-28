@@ -1,0 +1,41 @@
+Algorithm:
+
+1. Start
+2. Input a string (str) from the user.
+3. Initialize count = 0 to store the number of vowels.
+4. For each character in the string:
+Convert the character to lowercase.
+Check if the character is one of the vowels (a, e, i, o, u):
+If true, increment count by 1.
+5. Output the value of count.
+6. End
+
+Pseudocode:
+
+START
+PRINT "Enter a string:"
+INPUT str
+SET count = 0
+FOR each character ch in str DO
+    SET ch = ToLowercase(ch)
+    IF ch == 'a' OR ch == 'e' OR ch == 'i' OR ch == 'o' OR ch == 'u' THEN
+        count = count + 1
+    END IF
+END FOR
+PRINT "Number of vowels:", count
+STOP
+
+Flowchart:
+
+    A[Start] --> B[Input string (str)]
+    B --> C[Initialize count = 0]
+    C --> D[For each character ch in str]
+    D --> E[Convert ch to lowercase]
+    E --> F{Is ch a vowel (a, e, i, o, u)?}
+    F --> G[Increment count by 1]:::yes
+    F --> H[No action]:::no
+    G --> I[Next character in str]
+    H --> I
+    I --> D
+    D --> J[Output count: Number of vowels]
+    J --> K[End]
