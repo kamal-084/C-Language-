@@ -28,3 +28,19 @@ END FOR
 STOP
 
 Flow Chart:
+flowchart TD
+    A[Start] --> B[Input n: Get the number of terms]
+    B --> C{Is n == 1?}
+    C --> D[Print 0]:::yes
+    D --> E[End]
+    C --> F{Is n >= 2?}
+    F --> G[Print 0 and 1]
+    G --> H[Initialize a = 0, b = 1]
+    H --> I[Set i = 3]
+    I --> J{Is i <= n?}
+    J --> K[Set c = a + b]
+    K --> L[Print c]
+    L --> M[Set a = b, b = c]
+    M --> N[Increment i by 1]
+    N --> J
+    J --> O[End]
