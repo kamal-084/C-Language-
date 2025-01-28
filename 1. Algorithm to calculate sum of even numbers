@@ -1,0 +1,23 @@
+Algorithm : 
+1. Start.
+2. Initialize sum to 0.
+3. Input the range limit n (the maximum number to check).
+4. For each number i from 1 to n:
+If i is even (i % 2 == 0), add i to sum.
+5. Print the value of sum.
+6. Stop.
+
+Pseudocode : 
+START
+SET sum = 0
+PRINT "Enter the range limit (n):"
+INPUT n
+FOR i = 1 TO n DO
+    IF i MOD 2 == 0 THEN
+        sum = sum + i
+    ENDIF
+END FOR
+PRINT "The sum of even numbers is:", sum
+STOP
+
+Flowchart:
