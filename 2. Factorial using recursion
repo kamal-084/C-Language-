@@ -1,0 +1,24 @@
+Algorithm:
+1. Start.
+2. Input the number n.
+3. Define a recursive function factorial(x):
+If x == 0 or x == 1, return 1.
+Otherwise, return x * factorial(x - 1).
+4. Call the function factorial(n) and store the result.
+5. Print the factorial value.
+6. Stop.
+
+Pseudocode:
+START
+FUNCTION factorial(x)
+    IF x == 0 OR x == 1 THEN
+        RETURN 1
+    ELSE
+        RETURN x * factorial(x - 1)
+    ENDIF
+END FUNCTION
+PRINT "Enter a number:"
+INPUT n
+result = factorial(n)
+PRINT "The factorial of", n, "is:", result
+STOP
