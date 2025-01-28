@@ -1,0 +1,27 @@
+Algorithm:
+1. Start.
+2. Input the number n to be checked.
+3. If n <= 1, print "Not Prime" and stop.
+4. Initialize a loop variable i to 2.
+5. While i * i <= n, do the following:
+If n % i == 0, print "Not Prime" and stop.
+Otherwise, increment i by 1.
+6. If the loop completes without finding any factors, print "Prime".
+7. Stop.
+
+Pseudo code:
+START
+PRINT "Enter a number:"
+INPUT n
+IF n <= 1 THEN
+    PRINT "Not Prime"
+    STOP
+ENDIF
+FOR i = 2 TO sqrt(n) DO
+    IF n MOD i == 0 THEN
+        PRINT "Not Prime"
+        STOP
+    ENDIF
+END FOR
+PRINT "Prime"
+STOP
