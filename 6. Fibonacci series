@@ -1,0 +1,30 @@
+Algorithm:
+1. Start.
+2. Input the number of terms n.
+3. Initialize a = 0 (first term) and b = 1 (second term).
+4. Print a and b as the first two terms if n >= 2.
+5. Repeat the following steps for i from 3 to n:
+Calculate the next term c = a + b.
+Print c.
+Update a = b and b = c.
+6. Stop if all terms are printed.
+
+Pseudocode:
+START
+PRINT "Enter the number of terms (n):"
+INPUT n
+SET a = 0, b = 1
+IF n == 1 THEN
+    PRINT a
+    STOP
+ENDIF
+PRINT a, b
+FOR i = 3 TO n DO
+    SET c = a + b
+    PRINT c
+    SET a = b
+    SET b = c
+END FOR
+STOP
+
+Flow Chart:
