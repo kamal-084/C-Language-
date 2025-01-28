@@ -25,3 +25,18 @@ FOR i = 2 TO sqrt(n) DO
 END FOR
 PRINT "Prime"
 STOP
+
+Flow Chart:
+ A[Start] --> B[Input n: Get the number to check]
+    B --> C{Is n <= 1?}
+    C --> D[Output "Not Prime" and Stop]:::no
+    C --> E[Initialize i = 2]
+    E --> F{Is i * i <= n?}
+    F --> G[Output "Prime" and Stop]:::yes
+    F --> H{Is n % i == 0?}
+    H --> I[Output "Not Prime" and Stop]:::no
+    H --> J[Increment i by 1]
+    J --> F
+    G --> K[Output "Prime"]
+    K --> L[End]
+    D --> L
