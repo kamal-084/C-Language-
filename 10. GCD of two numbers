@@ -1,0 +1,26 @@
+Algorithm:
+
+1. Input: Two positive integers, a and b.
+2. Check: If b is 0, then the GCD is a. Return a.
+3. Else, set a = b and b = a % b (remainder of the division of a by b).
+4. Repeat the process until b becomes 0.
+5. Output: The GCD is the value of a when b becomes 0.
+
+Pseudocode:
+
+GCD(a, b):
+    while b ≠ 0:
+        temp = b
+        b = a % b
+        a = temp
+    return a
+
+    Flow Chart :
+    
+    Start[Start] --> Input[Input a and b]
+    Input --> Check{Check if b = 0}
+    Check -->|Yes| Output[Output a]
+    Check -->|No| Calculate[Calculate a % b]
+    Calculate --> Update[Update a = b and b = remainder]
+    Update --> Check
+    Output --> End[End]
