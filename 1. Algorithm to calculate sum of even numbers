@@ -21,12 +21,15 @@ PRINT "The sum of even numbers is:", sum
 STOP
 
 Flowchart:
-1. Start → Begin the process.
-2. Input n → Ask the user for the range limit.
-3. Initialize sum = 0.
-4. Loop i from 1 to n:
-Check Is i even?:
-If Yes, add i to sum.
-If No, skip.
-5. Print sum.
-6. End
+A[Start] --> B[Input n: Ask the user for the range limit]
+    B --> C[Initialize sum = 0]
+    C --> D[Set i = 1]
+    D --> E{Is i <= n?}
+    E --> F[Is i even?]
+    F --> G[Add i to sum]:::yes
+    F --> H[Skip]:::no
+    G --> I[Increment i by 1]
+    H --> I
+    I --> E
+    E --> J[Print sum]:::done
+    J --> K[End]
