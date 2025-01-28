@@ -22,3 +22,13 @@ INPUT n
 result = factorial(n)
 PRINT "The factorial of", n, "is:", result
 STOP
+
+Flow Chart:
+A[Start] --> B[Input n: Get the number whose factorial is to be calculated]
+    B --> C[Call Recursive Function: factorial(x)]
+    C --> D{Is x == 0 or x == 1?}
+    D --> E[Return 1]:::yes
+    D --> F[Return x * factorial(x - 1)]:::no
+    F --> G[Display Result: Output the factorial of n]
+    E --> G
+    G --> H[End
