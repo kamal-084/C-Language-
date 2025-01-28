@@ -18,3 +18,5 @@ SI = (P * R * T) / 100
 
 PRINT "The Simple Interest is:", SI
 STOP
+
+Flow Chart:
